@@ -40,6 +40,8 @@ function mousedown(e)
 {
 	canMove = 1;
 	color = "#" + Math.floor(Math.random()*16777215).toString(16);
+	x = e.clientX - canvas.offsetLeft;
+	y = e.clientY - canvas.offsetTop;
 }
 
 document.addEventListener("mouseup", mouseup);
